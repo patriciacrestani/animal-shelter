@@ -1,0 +1,159 @@
+.menuLink {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+
+    i {
+        padding-left: 5px;
+    }
+}
+
+.navBar {
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px 10px 20px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    max-height: 100px;
+
+    .navBarMenu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        height: 80px;
+
+        .navBarMenuLink {
+            display:inline-block;
+
+            .siteImage {
+                display: flex;
+                align-items: center;
+                font-size: 50px;
+                margin-left: 20px;
+                color: white;
+                text-decoration: none;
+
+                .siteName{
+                    font-size: 25px;
+                    color: white;
+                    padding-left: 15px;
+                }
+            }
+
+            .myProfile {
+                i {
+                    padding-left: 5px;
+                }
+            }
+            
+            .myProfile:hover ~ .profileMenu {
+                display:inherit;
+            }
+            
+            .profileMenu {
+                position: absolute;
+                display: none;
+                top: 52px;
+                list-style: none;
+                background-color: white;
+                margin: 0;
+                padding: 10px;
+                border: 1px solid black; 
+                box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+
+                .menuLink {
+                    color : black;
+                }
+        
+                .profileMenuLink {
+                    width:170px;
+                    float:none;
+                    display:list-item;
+                    position: relative;
+                }
+        
+                .profileMenuLink:first-child {
+                    border-bottom: 1px solid black;
+                    padding-bottom: 5px;
+                }
+
+                .profileMenuLink:last-child {
+                    padding-top: 5px;
+                }
+            }
+        
+             .profileMenu:hover {
+                display:inherit;
+            }
+        }
+      
+    
+        .logInOptions {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+            
+            .logInOptionsLink {
+                display: inline-block;
+    
+                &.entrar {
+                    padding-right: 10px;
+                    border-right: 1px solid white;
+                }
+    
+                &.cadastrar {
+                    padding-left: 10px;
+                }
+            }
+        }
+
+        .siteOptions {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 60px;
+
+            .languageOptions {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+
+                .languageOptionsLink {
+
+                    .languageLink {
+                        height: 20px;
+                        width: 28px;
+                    }
+                }
+
+            }
+
+            .fontOptions {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: space-around;
+                font-size: 12px;
+
+                .fontOptionsLink {
+
+                }
+            }
+        }
+    }
+}
