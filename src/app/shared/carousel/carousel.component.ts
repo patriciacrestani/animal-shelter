@@ -22,6 +22,7 @@ export class CarouselComponent {
     this.carouselItems.push(newCarouselItem1);
     this.carouselItems.push(newCarouselItem2);
     this.carouselItems.push(newCarouselItem3);
+    this.autoSlide();
   }
 
   changeActiveImage(itemIndex: number) {
@@ -57,5 +58,12 @@ export class CarouselComponent {
     }
 
     this.changeActiveImage(nextActiveIndex);
+  }
+
+  autoSlide() {
+    setTimeout(() => {
+      this.navigateCarouselItems(true);
+      this.autoSlide();
+    }, 3000);
   }
 }

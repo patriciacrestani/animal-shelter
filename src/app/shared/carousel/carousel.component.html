@@ -1,6 +1,6 @@
 <div *ngIf="carouselItems && carouselItems.length >= 0" class="carousel">
     <button class="carouselButton left" type="button" (click)="navigateCarouselItems(false)">
-        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-chevron-left fa-2x"></i>
     </button>
 
     
@@ -14,16 +14,19 @@
         >
 
         <div class="carouselButtonControl">
-            <button class="carouselButton floatingButton" type="button" *ngFor="let item of carouselItems; let i = index" (click)="changeActiveImage(i)">
-                <i class="fa-solid fa-circle" *ngIf="item.active"></i>
-                <i class="fa-regular fa-circle" *ngIf="!item.active"></i>
-            </button>
+            <button 
+                class="floatingButton" 
+                type="button" 
+                *ngFor="let item of carouselItems; let i = index" 
+                (click)="changeActiveImage(i)"
+                [ngClass]="{ 'active': item.active }"
+            ></button>
         </div>
     </div>
 
 
 
     <button class="carouselButton right" type="button" (click)="navigateCarouselItems(true)">
-        <i class="fa-solid fa-chevron-right"></i>
+        <i class="fa-solid fa-chevron-right fa-2x"></i>
     </button>
 </div>

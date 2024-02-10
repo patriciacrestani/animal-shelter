@@ -8,6 +8,14 @@
 
     .carouselButton {
         height: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        i {
+            color: green;
+
+        }
 
         .left {
             margin-left: 10px;
@@ -16,14 +24,7 @@
         .right{
             margin-right: 10px;
         }
-
-        .floatingButton{
-            position: relative;
-
-        }
     }
-
-    
 }
 
 .carouselItem {
@@ -39,8 +40,21 @@
     margin: auto;
     width: 120px;
 
-    .carouselButton {
+    .floatingButton{
         margin: 5px;
+        position: relative;
+        border-radius: 8px;
+        border-width: 1px;
+        height: 13px;
+        width: 13px;
+        padding: 0;
+        background-color: greenyellow;
+        box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+
+        &.active {
+            background-color: green;
+        }
     }
 }
 
