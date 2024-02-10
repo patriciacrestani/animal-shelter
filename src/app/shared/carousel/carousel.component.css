@@ -1,0 +1,54 @@
+.carousel{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    .carouselButton {
+        height: 30px;
+
+        .left {
+            margin-left: 10px;
+        }
+
+        .right{
+            margin-right: 10px;
+        }
+
+        .floatingButton{
+            position: relative;
+
+        }
+    }
+
+    
+}
+
+.carouselItem {
+    height: 270px;
+    width: 80vw;
+    margin: auto;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+.carouselButtonControl {
+    margin: auto;
+    width: 120px;
+
+    .carouselButton {
+        margin: 5px;
+    }
+}
+
+.activeCarouselItem {
+    display: block;
+
+}
+
+.inactiveCarouselItem {
+    display: none;
+}
