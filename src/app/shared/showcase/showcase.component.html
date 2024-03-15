@@ -1,0 +1,15 @@
+<div class="showcase" #showcase *ngIf="showcaseItems && showcaseItems.length > 0">
+    <div  class="showcaseItem" *ngFor="let item of showcaseItems">
+        <img
+            src="{{ item.src }}"
+            alt="{{ item.alt }}"
+            class="showcaseImage"
+        >
+            <!-- [ngClass]="{ 'activeCarouselItem': item.active, 'inactiveCarouselItem': !item.active }" -->
+        <p class="showcaseDescription">{{ item.description }}</p>
+        <div class="showcaseButtons">
+            <button class="showcaseButton"><i class="fa-solid fa-heart"></i></button>
+            <button class="showcaseButton"><i class="fa-solid fa-circle-question"></i></button>
+        </div>
+    </div>
+</div>

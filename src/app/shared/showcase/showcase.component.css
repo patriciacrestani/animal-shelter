@@ -1,0 +1,28 @@
+.showcase {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .showcaseItem {
+        max-width: 200px;
+        max-height: 350px;
+        border: 1px solid black;
+        border-radius: 16px;
+    
+        .showcaseImage {
+            max-width: 200px;
+            border-radius: 16px;
+    
+        }
+    
+        .showcaseDescription {
+    
+        }
+    
+        .showcaseButtons {
+            .showcaseButton {
+    
+            }
+        }
+    }
+}
